@@ -27,11 +27,11 @@
 }
 
 .task__done:hover {
-    background-color: hsl(120, 100%, 26%);
+    background-color: hsl(120, 100%, 28%);
 }
 
 .task__done:active {
-    background-color: hsl(120, 100%, 29%);
+    background-color: hsl(120, 100%, 31%);
 }
 
 .task__content {
