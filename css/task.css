@@ -23,15 +23,15 @@
     display: grid;
     justify-content: center;
     align-items: center;
+    transition: 0.5s;
 }
 
 .task__done:hover {
-    background-color: hsl(120, 100%, 28%);
+    background-color: hsl(120, 100%, 26%);
 }
 
 .task__done:active {
-    border: 2px solid black;
-    background-color: hsl(120, 100%, 32%);
+    background-color: hsl(120, 100%, 29%);
 }
 
 .task__content {
@@ -51,13 +51,13 @@
     display: grid;
     justify-content: center;
     align-items: center;
+    transition: 0.5s;
 }
 
 .task__remove:hover {
-    background-color: hsl(0, 100%, 58%);
+    background-color: hsl(0, 100%, 62%);
 }
 
 .task__remove:active {
-    background-color: hsl(0, 100%, 62%);
-    border: 2px solid black;
+    background-color: hsl(0, 100%, 68%);
 }
