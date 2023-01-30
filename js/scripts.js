@@ -25,8 +25,8 @@
         let HTMLstring = "";
         for (const task of tasks) {
             HTMLstring += `
-            <li class="task">
-             <ul class="task__list">
+            <ul class="task"> 
+             <li class="task__list">
              <button class="task__done">
              ${task.done? "✔" : ""}
              </button>
@@ -36,8 +36,8 @@
              <button class="task__remove">
              🗑
              </button>
-             </ul>
-            </li>`
+             </li>
+            </ul>`
         }
         document.querySelector(".js-tasks").innerHTML = HTMLstring;
 
