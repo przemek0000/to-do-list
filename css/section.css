@@ -44,10 +44,10 @@
 }
 
 .section__button:hover {
-    background-color: hsl(180, 100%, 26%);
+    background-color: hsl(180, 100%, 27%);
 }
 
 .section__button:active {
-    background-color: hsl(180, 100%, 29%);
+    background-color: hsl(180, 100%, 30%);
     transform: scale(1.2);
 }
