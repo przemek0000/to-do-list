@@ -16,6 +16,12 @@
     gap: 20px;
 }
 
+@media (max-width: 767px) {
+    .section__header--buttons {
+        grid-template-columns: 1fr;
+    }
+}
+
 .section__body {
     padding: 15px 20px;
 }
