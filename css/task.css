@@ -61,3 +61,37 @@
 .task__remove:active {
     background-color: hsl(0, 100%, 68%);
 }
+
+.hideDoneTasks {
+    padding: 0px;
+    font-size: 19px;
+    transition: 0.5s;
+    border: none;
+    background-color: white;
+    color: hsl(180, 100%, 30%);
+}
+
+.hideDoneTasks:hover {
+    color: hsl(180, 100%, 37%);
+}
+
+.hideDoneTasks:active {
+    color: hsl(180, 100%, 40%);
+}
+
+.doneAllTasks {
+    padding: 0px;
+    font-size: 19px;
+    transition: 0.5s;
+    border: none;
+    background-color: white;
+    color: hsl(180, 100%, 30%);
+}
+
+.doneAllTasks:hover {
+    color: hsl(180, 100%, 37%);
+}
+
+.doneAllTasks:active {
+    color: hsl(180, 100%, 40%);
+}

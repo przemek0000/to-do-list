@@ -5,9 +5,15 @@
 
 .section__header {
     margin: 5px 0;
-    padding: 20px 15px;
+    padding: 20px 25px;
     border-bottom: 2px solid #e6e6e6;
     font-weight: 700;
+}
+
+.section__header--buttons {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    gap: 20px;
 }
 
 .section__body {
