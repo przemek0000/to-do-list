@@ -26,6 +26,9 @@
             { ...tasks[index], done: !tasks[index].done },
             ...tasks.slice(index + 1)
         ];
+        if(tasks.every(task => task.done === true) === false) {
+            disabledTasks = false;
+        }
         render();
     };
 
@@ -79,9 +82,7 @@
                 if (task.done === true) {
                     task.hide = !task.hide;
                 };
-
             }
-
             render();
         });
     };
@@ -89,7 +90,7 @@
         const doneAllTasks = document.querySelector(".js-doneAllTasks");
         doneAllTasks.addEventListener("click", () => {
             tasks.map(task => task.done = true);
-            disabledTasks = !disabledTasks;
+            disabledTasks = true;
             render();
         });
     };
@@ -127,7 +128,7 @@
 
     const onFormSubmit = (event) => {
         event.preventDefault();
-
+        disabledTasks = false;
         const newTask = document.querySelector(".js-task").value.trim();
         const clearTask = document.querySelector(".js-task");
 
