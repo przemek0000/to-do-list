@@ -104,7 +104,7 @@
             ${toggleWord ? "Ukryj" : "Pokaż"}
              ukończone
             </button>
-            <button class="doneAllButton js-doneAllTasks ${disabledTasks? "doneAllButton--disabled" : ""} " ${disabledTasks ? "disabled" : ""}>
+            <button class="doneAllButton js-doneAllTasks ${disabledTasks? "doneAllButton--disabled\" disabled" : "\""}>
             Ukończ wszystkie
             </button>
             `
