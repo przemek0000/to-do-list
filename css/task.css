@@ -62,7 +62,7 @@
     background-color: hsl(0, 100%, 68%);
 }
 
-.hideDoneTasks {
+.hideDoneButton {
     padding: 0px;
     font-size: 19px;
     transition: 0.5s;
@@ -71,15 +71,15 @@
     color: hsl(180, 100%, 30%);
 }
 
-.hideDoneTasks:hover {
+.hideDoneButton:hover {
     color: hsl(180, 100%, 37%);
 }
 
-.hideDoneTasks:active {
+.hideDoneButton:active {
     color: hsl(180, 100%, 40%);
 }
 
-.doneAllTasks {
+.doneAllButton {
     padding: 0px;
     font-size: 19px;
     transition: 0.5s;
@@ -88,10 +88,10 @@
     color: hsl(180, 100%, 30%);
 }
 
-.doneAllTasks:hover {
+.doneAllButton:hover {
     color: hsl(180, 100%, 37%);
 }
 
-.doneAllTasks:active {
+.doneAllButton:active {
     color: hsl(180, 100%, 40%);
 }
