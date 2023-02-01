@@ -26,7 +26,7 @@
             { ...tasks[index], done: !tasks[index].done },
             ...tasks.slice(index + 1)
         ];
-        if(tasks.every(task => task.done === true) === false) {
+        if (tasks.every(task => task.done === true) === false) {
             disabledTasks = false;
         }
         render();
@@ -104,7 +104,7 @@
             ${toggleWord ? "Ukryj" : "Pokaż"}
              ukończone
             </button>
-            <button class="doneAllButton js-doneAllTasks" ${disabledTasks ? "disabled" : ""}>
+            <button class="doneAllButton js-doneAllTasks ${disabledTasks? "doneAllButton--disabled" : ""} " ${disabledTasks ? "disabled" : ""}>
             Ukończ wszystkie
             </button>
             `
@@ -125,7 +125,6 @@
         doneButtons();
     };
 
-
     const onFormSubmit = (event) => {
         event.preventDefault();
         disabledTasks = false;
@@ -139,7 +138,6 @@
         clearTask.value = "";
         clearTask.focus();
     };
-
 
     let init = () => {
         render();

@@ -95,3 +95,15 @@
 .doneAllButton:active {
     color: hsl(180, 100%, 40%);
 }
+
+.doneAllButton--disabled {
+    color: grey;
+}
+
+.doneAllButton--disabled:hover {
+    color: grey;
+}
+
+.doneAllButton--disabled:active {
+    color: grey;
+}
