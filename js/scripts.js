@@ -26,7 +26,7 @@
             { ...tasks[index], done: !tasks[index].done },
             ...tasks.slice(index + 1)
         ];
-        if (tasks.every(task => task.done === true) === false) {
+        if (tasks.some(task => task.done === false) === true) {
             disabledTasks = false;
         }
         render();
