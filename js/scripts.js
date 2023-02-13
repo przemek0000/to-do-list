@@ -97,9 +97,8 @@
 
     const renderButtons = () => {
         const twoButtons = document.querySelector(".js-showHiddenButtons");
-        if (tasks.map(task => task.content) != "") {
+        if (tasks.length > 0) {
             twoButtons.innerHTML = `
-            Lista zadań
             <button class="hideDoneButton js-hideDoneTasks">
             ${toggleWord ? "Ukryj" : "Pokaż"}
              ukończone
@@ -111,10 +110,6 @@
             hideDoneTasks();
             doneAllTasks();
         }
-        else {
-            twoButtons.innerHTML = "Lista zadań";
-        };
-
     };
 
     const render = () => {
@@ -132,7 +127,7 @@
         const clearTask = document.querySelector(".js-task");
 
         if (newTask === "") {
-            return 0;
+            return ;
         }
         addNewTask(newTask);
         clearTask.value = "";

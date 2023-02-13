@@ -10,15 +10,26 @@
     font-weight: 700;
 }
 
-.section__header--buttons {
+.section__header--split {
     display: grid;
-    grid-template-columns: 1fr auto auto;
+    justify-content: space-between;
+    grid-template-columns: auto auto;
+}
+
+@media (max-width: 767px) {
+    .section__header--split {
+        grid-template-columns: 1fr;
+    }
+}
+
+.section__Buttons {
+    display: flex;
     gap: 20px;
 }
 
 @media (max-width: 767px) {
-    .section__header--buttons {
-        grid-template-columns: 1fr;
+    .section__Buttons {
+        flex-direction: column;
     }
 }
 
