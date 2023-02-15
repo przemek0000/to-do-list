@@ -129,6 +129,7 @@
         if (newTask === "") {
             return ;
         }
+        
         addNewTask(newTask);
         clearTask.value = "";
         clearTask.focus();
