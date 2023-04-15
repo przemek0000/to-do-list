@@ -7,7 +7,7 @@
 
 ## Demo
 
-[Website](https://przemek0000.github.io/Module-7/)
+[Website](https://przemek0000.github.io/to-do-list/)
 
 ## Introduction
 
